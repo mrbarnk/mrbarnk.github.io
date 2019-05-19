@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-GB" prefix="og: http://ogp.me/ns#" class="html_stretched responsive av-preloader-disabled av-default-lightbox  html_header_top html_logo_left html_main_nav_header html_menu_right html_slim html_header_sticky html_header_shrinking html_header_topbar_active html_mobile_menu_phone html_header_searchicon_disabled html_content_align_center html_header_unstick_top_disabled html_header_stretch html_elegant-blog html_modern-blog html_av-overlay-side html_av-overlay-side-minimal html_av-submenu-noclone html_entry_id_15467 av-no-preview html_text_menu_active ">
+<head>
+<meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+
+
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Scripts/CSS and wp_head hook -->
+<script>var localized_content_cookie = "STYXKEY_timezone";</script>
+<script src="https://vzaar.com/wp-content/plugins/localized-content/timezone.js?ver=5.1"></script>
+<title>Case Studies Archives | vzaar</title>
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" type="text/javascript">//<![CDATA[
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+
+	var gtm4wp_scrollerscript_debugmode         = true;
+	var gtm4wp_scrollerscript_callbacktime      = 100;
+	var gtm4wp_scrollerscript_readerlocation    = 150;
+	var gtm4wp_scrollerscript_contentelementid  = "main";
+	var gtm4wp_scrollerscript_scannertime       = 60;
+//]]>
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- This site is optimized with the Yoast SEO Premium plugin v9.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="noindex,follow"/>
+<link rel="next" href="https://vzaar.com/case-studies/page/2/" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="Case Studies Archives | vzaar" />
+<meta property="og:url" content="https://vzaar.com/case-studies/" />
+<meta property="og:site_name" content="vzaar" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Case Studies Archives | vzaar" />
+<meta name="twitter:site" content="@vzaar" />
+<script type='application/ld+json'>{"@context":"https://schema.org","@type":"Organization","url":"https://vzaar.com/","sameAs":["https://www.facebook.com/vzaar","https://www.linkedin.com/company/vzaar-limited","https://twitter.com/vzaar"],"@id":"https://vzaar.com/#organization","name":"vzaar","logo":"https://vzaar.com/wp-content/uploads/2018/05/logo-padded-1.png"}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='//vzaar.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="vzaar &raquo; Feed" href="https://vzaar.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="vzaar &raquo; Comments Feed" href="https://vzaar.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="vzaar &raquo; Case Studies Category Feed" href="https://vzaar.com/case-studies/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/vzaar.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='avia-grid-css'  href='https://vzaar.com/wp-content/themes/enfold/css/grid.css?ver=4.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-base-css'  href='https://vzaar.com/wp-content/themes/enfold/css/base.css?ver=4.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-layout-css'  href='https://vzaar.com/wp-content/themes/enfold/css/layout.css?ver=4.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-blog-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/blog/blog.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-postslider-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/postslider/postslider.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-button-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/buttons/buttons.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-buttonrow-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/buttonrow/buttonrow.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-comments-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/comments/comments.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-gallery-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery/gallery.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-gridrow-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/grid_row/grid_row.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-heading-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/heading/heading.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-rotator-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/headline_rotator/headline_rotator.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-hr-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/hr/hr.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-icon-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/icon/icon.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-iconbox-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/iconbox/iconbox.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-image-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/image/image.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-contentpartner-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/contentslider/contentslider.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-numbers-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/numbers/numbers.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-promobox-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/promobox/promobox.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-social-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/social_share/social_share.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-table-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/table/table.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-tabs-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tabs/tabs.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-team-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/team/team.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-testimonials-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/testimonials/testimonials.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-video-css'  href='https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/video/video.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://vzaar.com/wp-includes/css/dist/block-library/style.min.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-scs-css'  href='https://vzaar.com/wp-content/themes/enfold/css/shortcodes.css?ver=4.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-popup-css-css'  href='https://vzaar.com/wp-content/themes/enfold/js/aviapopup/magnific-popup.css?ver=4.5.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='avia-lightbox-css'  href='https://vzaar.com/wp-content/themes/enfold/css/avia-snippet-lightbox.css?ver=4.5.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='avia-widget-css-css'  href='https://vzaar.com/wp-content/themes/enfold/css/avia-snippet-widget.css?ver=4.5.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='avia-dynamic-css'  href='https://vzaar.com/wp-content/uploads/dynamic_avia/enfold_child.css?ver=5c894681750b7' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-custom-css'  href='https://vzaar.com/wp-content/themes/enfold/css/custom.css?ver=4.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-style-css'  href='https://vzaar.com/wp-content/themes/enfold-child/style.css?ver=4.5.4' type='text/css' media='all' />
+<script type='text/javascript' src='https://vzaar.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://vzaar.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.9.2'></script>
+<script type='text/javascript' src='https://vzaar.com/wp-content/plugins/duracelltomi-google-tag-manager/js/analytics-talk-content-tracking.js?ver=1.9.2'></script>
+<link rel='https://api.w.org/' href='https://vzaar.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://vzaar.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://vzaar.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1" />
+<!-- vzaar Player API -->
+<script src="https://player.vzaar.com/libs/flashtakt/client.js" type="text/javascript"></script>
+
+<!-- Hide snow on optimised pages -->
+<!-- <script>if (window.location.pathname.substring(0, 6) === "/page/") { snoweffect.show = 0; }</script> -->
+
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" type="text/javascript">//<![CDATA[
+var google_tag_params = {"pageTitle":"Case Studies Archives | vzaar","pagePostType":"post","pagePostType2":"category-post","pageCategory":["agency","case-studies"],"browserName":"Archive.org","browserVersion":"","browserEngineName":"","browserEngineVersion":"","osName":"","osVersion":"","deviceType":"bot","deviceManufacturer":"","deviceModel":"","postCountOnPage":5,"postCountTotal":40,"geoCountryCode":"(no geo data available)","geoCountryName":"(no geo data available)","geoRegionCode":"(no geo data available)","geoRegionName":"(no geo data available)","geoCity":"(no geo data available)","geoZipcode":"(no geo data available)","geoLatitude":"(no geo data available)","geoLongitude":"(no geo data available)","geoFullGeoData":{"success":false,"error":{"code":101,"type":"missing_access_key","info":"You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]"}}};
+	dataLayer.push({"pageTitle":"Case Studies Archives | vzaar","pagePostType":"post","pagePostType2":"category-post","pageCategory":["agency","case-studies"],"browserName":"Archive.org","browserVersion":"","browserEngineName":"","browserEngineVersion":"","osName":"","osVersion":"","deviceType":"bot","deviceManufacturer":"","deviceModel":"","postCountOnPage":5,"postCountTotal":40,"geoCountryCode":"(no geo data available)","geoCountryName":"(no geo data available)","geoRegionCode":"(no geo data available)","geoRegionName":"(no geo data available)","geoCity":"(no geo data available)","geoZipcode":"(no geo data available)","geoLatitude":"(no geo data available)","geoLongitude":"(no geo data available)","geoFullGeoData":{"success":false,"error":{"code":101,"type":"missing_access_key","info":"You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]"}},"google_tag_params":window.google_tag_params});//]]>
+</script>
+<script data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K4KS');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="alternate" type="application/rss+xml" title="vzaar RSS2 Feed" href="https://vzaar.com/feed/" />
+<link rel="pingback" href="https://vzaar.com/xmlrpc.php" />
+<!--[if lt IE 9]><script src="https://vzaar.com/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
+
+
+<!-- To speed up the rendering and to display the site as fast as possible to the user we include some styles and scripts for above the fold content inline -->
+<script type="text/javascript">'use strict';var avia_is_mobile=!1;if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)&&'ontouchstart' in document.documentElement){avia_is_mobile=!0;document.documentElement.className+=' avia_mobile '}
+else{document.documentElement.className+=' avia_desktop '};document.documentElement.className+=' js_active ';(function(){var e=['-webkit-','-moz-','-ms-',''],n='';for(var t in e){if(e[t]+'transform' in document.documentElement.style){document.documentElement.className+=' avia_transform ';n=e[t]+'transform'};if(e[t]+'perspective' in document.documentElement.style)document.documentElement.className+=' avia_transform3d '};if(typeof document.getElementsByClassName=='function'&&typeof document.documentElement.getBoundingClientRect=='function'&&avia_is_mobile==!1){if(n&&window.innerHeight>0){setTimeout(function(){var e=0,o={},a=0,t=document.getElementsByClassName('av-parallax'),i=window.pageYOffset||document.documentElement.scrollTop;for(e=0;e<t.length;e++){t[e].style.top='0px';o=t[e].getBoundingClientRect();a=Math.ceil((window.innerHeight+i-o.top)*0.3);t[e].style[n]='translate(0px, '+a+'px)';t[e].style.top='auto';t[e].className+=' enabled-parallax '}},50)}}})();</script><link rel="icon" href="https://vzaar.com/wp-content/uploads/2018/11/cropped-vz-roundel-dark-white-bg-512-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://vzaar.com/wp-content/uploads/2018/11/cropped-vz-roundel-dark-white-bg-512-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://vzaar.com/wp-content/uploads/2018/11/cropped-vz-roundel-dark-white-bg-512-180x180.png" />
+<meta name="msapplication-TileImage" content="https://vzaar.com/wp-content/uploads/2018/11/cropped-vz-roundel-dark-white-bg-512-270x270.png" />
+<style type='text/css'>
+@font-face {font-family: 'entypo-fontello'; font-weight: normal; font-style: normal;
+src: url('https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot');
+src: url('https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot?#iefix') format('embedded-opentype'), 
+url('https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff') format('woff'), 
+url('https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf') format('truetype'), 
+url('https://vzaar.com/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.svg#entypo-fontello') format('svg');
+} #top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before{ font-family: 'entypo-fontello'; }
+</style>
+
+<!--
+Debugging Info for Theme support: 
+
+Theme: Enfold
+Version: 4.5.4
+Installed: enfold
+AviaFramework Version: 5.0
+AviaBuilder Version: 0.9.5
+aviaElementManager Version: 1.0.1
+- - - - - - - - - - -
+ChildTheme: Enfold Child
+ChildTheme Version: 1.0
+ChildTheme Installed: enfold
+
+ML:512-PU:16-PLA:13
+WP:5.1
+Compress: CSS:all theme files - JS:all theme files
+Updates: enabled
+PLAu:12
+-->
+</head>
+
+
+
+
+<body id="top" class="archive category category-case-studies category-1420  rtl_columns stretched ">
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4KS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><br style="display:none;" itemscope="itemscope" itemtype="https://schema.org/WebPage" >
+
+	
+	<div id='wrap_all'>
+
+	
+<header id='header' class='all_colors header_color light_bg_color  av_header_top av_logo_left av_main_nav_header av_menu_right av_slim av_header_sticky av_header_shrinking av_header_stretch av_mobile_menu_phone av_header_searchicon_disabled av_header_unstick_top_disabled av_bottom_nav_disabled  av_header_border_disabled'  role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader" >
+
+		<div id='header_meta' class='container_wrap container_wrap_meta  av_secondary_right av_extra_header_active av_phone_active_right av_entry_id_15467'>
+		
+			      <div class='container'>
+			      <nav class='sub_menu'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><ul id="avia2-menu" class="menu"><li id="menu-item-10395" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10395"><a href="https://help.vzaar.com">Support</a></li>
+<li id="menu-item-16125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16125"><a href="https://vzaar.com/login/">Login</a></li>
+</ul></nav><div class='phone-info with_nav'><span><a href='tel:+442038580323' style='color:inherit;'>+44 20 3858 0323</a></span></div>			      </div>
+		</div>
+
+		<div  id='header_main' class='container_wrap container_wrap_logo'>
+	
+        <div class='container av-logo-container'><div class='inner-container'><span class='logo'><a href='https://vzaar.com/'><img height='100' width='300' src='https://vzaar.com/wp-content/uploads/2019/03/vzdc-logo-1500x630.png' alt='vzaar' /></a></span><nav class='main_menu' data-selectname='Select a page'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><div class="avia-menu av-main-nav-wrap"><ul id="avia-menu" class="menu av-main-nav"><li id="menu-item-10304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-top-level menu-item-top-level-1"><a href="https://vzaar.com/online-video-platform/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Platform</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+<ul class="sub-menu">
+	<li id="menu-item-13343" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/online-video-platform/video-management-platform/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Video management</span></a></li>
+	<li id="menu-item-13348" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/online-video-platform/video-upload/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Uploader</span></a></li>
+	<li id="menu-item-13346" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/online-video-platform/html5-video-player/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Player</span></a></li>
+	<li id="menu-item-13341" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/online-video-platform/global-playback/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Global delivery</span></a></li>
+	<li id="menu-item-17837" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/online-video-platform/global-playback/china-video-hosting/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">In-China playback</span></a></li>
+	<li id="menu-item-13347" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/online-video-platform/secure-video-hosting/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Security</span></a></li>
+	<li id="menu-item-20082" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/online-video-platform/video-advertising/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Monetization</span></a></li>
+	<li id="menu-item-13342" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/online-video-platform/api/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">API</span></a></li>
+	<li id="menu-item-20397" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/online-video-platform/api/integrations/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Integrations</span></a></li>
+	<li id="menu-item-13340" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/online-video-platform/analyze/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Analytics</span></a></li>
+</ul>
+</li>
+<li id="menu-item-11131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-top-level menu-item-top-level-2"><a href="https://vzaar.com/solutions/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Solutions</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+<ul class="sub-menu">
+	<li id="menu-item-13351" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/solutions/video-hosting-for-elearning/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">eLearning</span></a></li>
+	<li id="menu-item-13355" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/solutions/video-platform-for-publishing/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Publishing</span></a></li>
+	<li id="menu-item-13350" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/solutions/video-hosting-for-ecommerce/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">eCommerce</span></a></li>
+	<li id="menu-item-13354" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/solutions/video-hosting-for-marketing/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Marketing</span></a></li>
+	<li id="menu-item-13349" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/solutions/video-hosting-for-agencies/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Agencies</span></a></li>
+	<li id="menu-item-13352" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://vzaar.com/solutions/video-hosting-for-internal-communications/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Internal Communications</span></a></li>
+</ul>
+</li>
+<li id="menu-item-15658" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-3"><a href="https://vzaar.com/pricing/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Pricing</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-4"><a href="https://vzaar.com/contact/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Contact</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-10396" class="menu-item menu-item-type-custom menu-item-object-custom av-menu-button av-menu-button-colored menu-item-top-level menu-item-top-level-5"><a href="/signup/trial/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Start Free Trial</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li class="av-burger-menu-main menu-item-avia-special ">
+	        			<a href="#">
+							<span class="av-hamburger av-hamburger--spin av-js-hamburger">
+					        <span class="av-hamburger-box">
+						          <span class="av-hamburger-inner"></span>
+						          <strong>Menu</strong>
+					        </span>
+							</span>
+						</a>
+	        		   </li></ul></div></nav></div> </div> 
+		<!-- end container_wrap-->
+		</div>
+		<div class='header_bg'></div>
+
+<!-- end header -->
+</header>
+		
+	<div id='main' class='all_colors' data-scroll-offset='88'>
+
+	
+		<div class='container_wrap container_wrap_first main_color sidebar_right'>
+
+			<div class='container template-blog '>
+
+				<main class='content av-content-small alpha units'  role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="https://schema.org/Blog" >
+					
+					                    
+
+                    <article class='post-entry post-entry-type-standard post-entry-15467 post-loop-1 post-parity-odd single-big  post-15467 post type-post status-publish format-standard hentry category-agency category-case-studies'  itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost" ><div class='blog-meta'></div><div class='entry-content-wrapper clearfix standard-content'><header class="entry-content-header"><div class="av-heading-wrapper"><h2 class='post-title entry-title'  itemprop="headline" >	<a href='https://vzaar.com/blog/2018/01/03/case-study-how-smart-pension-uses-video-to-make-auto-enrolment-easy/' rel='bookmark' title='Permanent Link: Case Study: How Smart Pension Uses Video to Make Auto Enrolment Easy'>Case Study: How Smart Pension Uses Video to Make Auto Enrolment Easy			<span class='post-format-icon minor-meta'></span>	</a></h2><span class="blog-categories minor-meta"><a href="https://vzaar.com/agency/" rel="tag">Agency</a>, <a href="https://vzaar.com/case-studies/" rel="tag">Case Studies</a> </span></div></header><span class="av-vertical-delimiter"></span><div class="entry-content"  itemprop="text" ><div class="column-100">
+<hgroup>
+<h2></h2>
+</hgroup>
+<p class="video-flow"><iframe id="vzvd-4790796" class="vzaar-video-player" title="vzaar video player" src="https://view.vzaar.com/4790796/player" name="vzvd-4790796" width="576" height="324" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></p>
+<p><a href="https://www.autoenrolment.co.uk/" target="_blank" rel="noopener">Smart Pension</a> is a recent UK startup that aims to make auto enrolment as easy as possible for businesses. Auto enrolment is a scheme developed by the UK government which compels UK businesses to provide their employees with a workplace pension. Smart Pension makes it super quick and easy for a company to create a workplace pension for its employees and become compliant with auto enrolment law &#8211; for free! <a href="https://vzaar.com/blog/2018/01/03/case-study-how-smart-pension-uses-video-to-make-auto-enrolment-easy/" class="more-link">Read more<span class="more-link-arrow"></span></a></div>
+</div><span class='post-meta-infos'><time class='date-container minor-meta updated' >3rd January 2018</time><span class='text-sep text-sep-date'>/</span><span class='comment-container minor-meta'><a href="https://vzaar.com/blog/2018/01/03/case-study-how-smart-pension-uses-video-to-make-auto-enrolment-easy/#respond" class="comments-link" >0 Comments</a></span><span class='text-sep text-sep-comment'>/</span><span class="blog-author minor-meta">by <span class="entry-author-link" ><span class="vcard author"><span class="fn"><a href="https://vzaar.com/blog/author/rhiannon/" title="Posts by Rhiannon" rel="author">Rhiannon</a></span></span></span></span></span><footer class="entry-footer"></footer><div class='post_delimiter'></div></div><div class='post_author_timeline'></div><span class='hidden'>
+			<span class='av-structured-data'  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject"  itemprop='image'>
+					   <span itemprop='url' >https://vzaar.com/wp-content/uploads/2019/03/vzdc-logo-1500x630.png</span>
+					   <span itemprop='height' >0</span>
+					   <span itemprop='width' >0</span>
+				  </span><span class='av-structured-data'  itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope" >
+				<span itemprop='name'>Rhiannon</span>
+				<span itemprop='logo' itemscope itemtype='https://schema.org/ImageObject'>
+				   <span itemprop='url'>https://vzaar.com/wp-content/uploads/2019/03/vzdc-logo-1500x630.png</span>
+				 </span>
+			  </span><span class='av-structured-data'  itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person" ><span itemprop='name'>Rhiannon</span></span><span class='av-structured-data'  itemprop="datePublished" datetime="2018-01-03T14:21:26+01:00" >2018-01-03 14:21:26</span><span class='av-structured-data'  itemprop="dateModified" itemtype="https://schema.org/dateModified" >2018-09-23 14:24:20</span><span class='av-structured-data'  itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage" ><span itemprop='name'>Case Study: How Smart Pension Uses Video to Make Auto Enrolment Easy</span></span></span></article><article class='post-entry post-entry-type-standard post-entry-15413 post-loop-2 post-parity-even single-big  post-15413 post type-post status-publish format-standard hentry category-case-studies'  itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost" ><div class='blog-meta'></div><div class='entry-content-wrapper clearfix standard-content'><header class="entry-content-header"><div class="av-heading-wrapper"><h2 class='post-title entry-title'  itemprop="headline" >	<a href='https://vzaar.com/blog/2017/09/23/jump-start-jonny/' rel='bookmark' title='Permanent Link: Case Study: How Jump Start Jonny Grows Views, Increases Subscribers &amp; Gets Kids Moving With Video'>Case Study: How Jump Start Jonny Grows Views, Increases Subscribers &amp; Gets Kids Moving With Video			<span class='post-format-icon minor-meta'></span>	</a></h2><span class="blog-categories minor-meta"><a href="https://vzaar.com/case-studies/" rel="tag">Case Studies</a> </span></div></header><span class="av-vertical-delimiter"></span><div class="entry-content"  itemprop="text" ><div class="column-100">
+<hgroup></hgroup>
+<p class="video-flow"><iframe id="vzvd-10496655" class="vzaar-video-player" title="vzaar video player" src="https://view.vzaar.com/10496655/player" name="vzvd-10496655" width="576" height="324" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></p>
+<p><a href="https://www.jumpstartjonny.co.uk/" target="_blank" rel="noopener">Jump Start Jonny</a> makes fun exercise videos to get children more active in schools. Loved by teachers around the world, the business has quickly grown from 7 to 7 THOUSAND views every single week (and counting!). <a href="https://vzaar.com/blog/2017/09/23/jump-start-jonny/" class="more-link">Read more<span class="more-link-arrow"></span></a></div>
+</div><span class='post-meta-infos'><time class='date-container minor-meta updated' >23rd September 2017</time><span class='text-sep text-sep-date'>/</span><span class='comment-container minor-meta'><a href="https://vzaar.com/blog/2017/09/23/jump-start-jonny/#respond" class="comments-link" >0 Comments</a></span><span class='text-sep text-sep-comment'>/</span><span class="blog-author minor-meta">by <span class="entry-author-link" ><span class="vcard author"><span class="fn"><a href="https://vzaar.com/blog/author/rhiannon/" title="Posts by Rhiannon" rel="author">Rhiannon</a></span></span></span></span></span><footer class="entry-footer"></footer><div class='post_delimiter'></div></div><div class='post_author_timeline'></div><span class='hidden'>
+			<span class='av-structured-data'  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject"  itemprop='image'>
+					   <span itemprop='url' >https://vzaar.com/wp-content/uploads/2019/03/vzdc-logo-1500x630.png</span>
+					   <span itemprop='height' >0</span>
+					   <span itemprop='width' >0</span>
+				  </span><span class='av-structured-data'  itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope" >
+				<span itemprop='name'>Rhiannon</span>
+				<span itemprop='logo' itemscope itemtype='https://schema.org/ImageObject'>
+				   <span itemprop='url'>https://vzaar.com/wp-content/uploads/2019/03/vzdc-logo-1500x630.png</span>
+				 </span>
+			  </span><span class='av-structured-data'  itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person" ><span itemprop='name'>Rhiannon</span></span><span class='av-structured-data'  itemprop="datePublished" datetime="2017-09-23T11:31:14+01:00" >2017-09-23 11:31:14</span><span class='av-structured-data'  itemprop="dateModified" itemtype="https://schema.org/dateModified" >2018-09-23 13:55:09</span><span class='av-structured-data'  itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage" ><span itemprop='name'>Case Study: How Jump Start Jonny Grows Views, Increases Subscribers &amp; Gets Kids Moving With Video</span></span></span></article><article class='post-entry post-entry-type-standard post-entry-15428 post-loop-3 post-parity-odd single-big  post-15428 post type-post status-publish format-standard hentry category-case-studies'  itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost" ><div class='blog-meta'></div><div class='entry-content-wrapper clearfix standard-content'><header class="entry-content-header"><div class="av-heading-wrapper"><h2 class='post-title entry-title'  itemprop="headline" >	<a href='https://vzaar.com/blog/2017/08/21/case-study-yoopod/' rel='bookmark' title='Permanent Link: Case Study: How yoopod Launched Its Rapidly Growing Online Exercise Business'>Case Study: How yoopod Launched Its Rapidly Growing Online Exercise Business			<span class='post-format-icon minor-meta'></span>	</a></h2><span class="blog-categories minor-meta"><a href="https://vzaar.com/case-studies/" rel="tag">Case Studies</a> </span></div></header><span class="av-vertical-delimiter"></span><div class="entry-content"  itemprop="text" ><div class="column-100">
+<hgroup>
+<h2></h2>
+</hgroup>
+<p class="video-flow"><iframe id="vzvd-8755549" class="vzaar-video-player" title="vzaar video player" src="https://view.vzaar.com/8755549/player" name="vzvd-8755549" width="576" height="324" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></p>
+<p><a href="http://www.yoopod.com/" target="_blank" rel="noopener">yoopod</a> brings award-winning exercise classes to your screen via online video. Training young and old, rookies and veterans, desk-bound and vagabonds, across the globe, the team make pilates and yoga classes accessible to everyone.  <a href="https://vzaar.com/blog/2017/08/21/case-study-yoopod/" class="more-link">Read more<span class="more-link-arrow"></span></a></div>
+</div><span class='post-meta-infos'><time class='date-container minor-meta updated' >21st August 2017</time><span class='text-sep text-sep-date'>/</span><span class='comment-container minor-meta'><a href="https://vzaar.com/blog/2017/08/21/case-study-yoopod/#respond" class="comments-link" >0 Comments</a></span><span class='text-sep text-sep-comment'>/</span><span class="blog-author minor-meta">by <span class="entry-author-link" ><span class="vcard author"><span class="fn"><a href="https://vzaar.com/blog/author/rhiannon/" title="Posts by Rhiannon" rel="author">Rhiannon</a></span></span></span></span></span><footer class="entry-footer"></footer><div class='post_delimiter'></div></div><div class='post_author_timeline'></div><span class='hidden'>
+			<span class='av-structured-data'  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject"  itemprop='image'>
+					   <span itemprop='url' >https://vzaar.com/wp-content/uploads/2019/03/vzdc-logo-1500x630.png</span>
+					   <span itemprop='height' >0</span>
+					   <span itemprop='width' >0</span>
+				  </span><span class='av-structured-data'  itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope" >
+				<span itemprop='name'>Rhiannon</span>
+				<span itemprop='logo' itemscope itemtype='https://schema.org/ImageObject'>
+				   <span itemprop='url'>https://vzaar.com/wp-content/uploads/2019/03/vzdc-logo-1500x630.png</span>
+				 </span>
+			  </span><span class='av-structured-data'  itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person" ><span itemprop='name'>Rhiannon</span></span><span class='av-structured-data'  itemprop="datePublished" datetime="2017-08-21T11:49:38+01:00" >2017-08-21 11:49:38</span><span class='av-structured-data'  itemprop="dateModified" itemtype="https://schema.org/dateModified" >2018-09-23 13:55:42</span><span class='av-structured-data'  itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage" ><span itemprop='name'>Case Study: How yoopod Launched Its Rapidly Growing Online Exercise Business</span></span></span></article><article class='post-entry post-entry-type-standard post-entry-15461 post-loop-4 post-parity-even single-big  post-15461 post type-post status-publish format-standard hentry category-agency category-case-studies'  itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost" ><div class='blog-meta'></div><div class='entry-content-wrapper clearfix standard-content'><header class="entry-content-header"><div class="av-heading-wrapper"><h2 class='post-title entry-title'  itemprop="headline" >	<a href='https://vzaar.com/blog/2017/05/23/case-study-how-ovation-drives-employee-engagement-with-personalized-recognition-videos/' rel='bookmark' title='Permanent Link: Case Study: How Ovation Drives Employee Engagement With Personalized Recognition Videos'>Case Study: How Ovation Drives Employee Engagement With Personalized Recognition Videos			<span class='post-format-icon minor-meta'></span>	</a></h2><span class="blog-categories minor-meta"><a href="https://vzaar.com/agency/" rel="tag">Agency</a>, <a href="https://vzaar.com/case-studies/" rel="tag">Case Studies</a> </span></div></header><span class="av-vertical-delimiter"></span><div class="entry-content"  itemprop="text" ><div class="column-100">
+<hgroup>
+<h2></h2>
+</hgroup>
+<p class="video-flow"><iframe id="vzvd-4770495" class="vzaar-video-player" title="vzaar video player" src="https://view.vzaar.com/4770495/player" name="vzvd-4770495" width="576" height="324" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></p>
+<p><a href="http://www.ovationincentives.com/" target="_blank" rel="noopener">Ovation</a> is a performance improvement agency which delivers genuinely successful recognition and engagement incentives to employees. Its global SaaS and mobile solutions allow teams to recognize and reward the desired behaviors of employees to drive engagement and deliver returns. <a href="https://vzaar.com/blog/2017/05/23/case-study-how-ovation-drives-employee-engagement-with-personalized-recognition-videos/" class="more-link">Read more<span class="more-link-arrow"></span></a></div>
+</div><span class='post-meta-infos'><time class='date-container minor-meta updated' >23rd May 2017</time><span class='text-sep text-sep-date'>/</span><span class='comment-container minor-meta'><a href="https://vzaar.com/blog/2017/05/23/case-study-how-ovation-drives-employee-engagement-with-personalized-recognition-videos/#respond" class="comments-link" >0 Comments</a></span><span class='text-sep text-sep-comment'>/</span><span class="blog-author minor-meta">by <span class="entry-author-link" ><span class="vcard author"><span class="fn"><a href="https://vzaar.com/blog/author/rhiannon/" title="Posts by Rhiannon" rel="author">Rhiannon</a></span></span></span></span></span><footer class="entry-footer"></footer><div class='post_delimiter'></div></div><div class='post_author_timeline'></div><span class='hidden'>
+			<span class='av-structured-data'  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject"  itemprop='image'>
+					   <span itemprop='url' >https://vzaar.com/wp-content/uploads/2019/03/vzdc-logo-1500x630.png</span>
+					   <span itemprop='height' >0</span>
+					   <span itemprop='width' >0</span>
+				  </span><span class='av-structured-data'  itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope" >
+				<span itemprop='name'>Rhiannon</span>
+				<span itemprop='logo' itemscope itemtype='https://schema.org/ImageObject'>
+				   <span itemprop='url'>https://vzaar.com/wp-content/uploads/2019/03/vzdc-logo-1500x630.png</span>
+				 </span>
+			  </span><span class='av-structured-data'  itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person" ><span itemprop='name'>Rhiannon</span></span><span class='av-structured-data'  itemprop="datePublished" datetime="2017-05-23T14:18:00+01:00" >2017-05-23 14:18:00</span><span class='av-structured-data'  itemprop="dateModified" itemtype="https://schema.org/dateModified" >2018-09-23 14:19:18</span><span class='av-structured-data'  itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage" ><span itemprop='name'>Case Study: How Ovation Drives Employee Engagement With Personalized Recognition Videos</span></span></span></article><article class='post-entry post-entry-type-standard post-entry-15545 post-loop-5 post-parity-odd post-entry-last single-big  post-15545 post type-post status-publish format-standard hentry category-case-studies category-e-learning'  itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost" ><div class='blog-meta'></div><div class='entry-content-wrapper clearfix standard-content'><header class="entry-content-header"><div class="av-heading-wrapper"><h2 class='post-title entry-title'  itemprop="headline" >	<a href='https://vzaar.com/blog/2016/11/28/case-study-how-san-antonio-independent-school-district-uses-video-to-showcase-its-schools/' rel='bookmark' title='Permanent Link: Case Study: How San Antonio Independent School District Uses Video to Showcase Its Schools'>Case Study: How San Antonio Independent School District Uses Video to Showcase Its Schools			<span class='post-format-icon minor-meta'></span>	</a></h2><span class="blog-categories minor-meta"><a href="https://vzaar.com/case-studies/" rel="tag">Case Studies</a>, <a href="https://vzaar.com/e-learning/" rel="tag">eLearning</a> </span></div></header><span class="av-vertical-delimiter"></span><div class="entry-content"  itemprop="text" ><hgroup>
+<h2></h2>
+</hgroup>
+<p class="video-flow"><iframe id="vzvd-3418094" class="vzaar-video-player" title="vzaar video player" src="https://view.vzaar.com/3418094/player" name="vzvd-3418094" width="576" height="324" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></p>
+<p>Serving 54,000 students in 90 schools at the heart of the city, San Antonio Independent School District (SAISD) is the third largest public school system in the Bexar County area. For more than 100 years it has educated some of San Antonio&#8217;s most notable citizens, whose contributions have made the world a better place. <a href="https://vzaar.com/blog/2016/11/28/case-study-how-san-antonio-independent-school-district-uses-video-to-showcase-its-schools/" class="more-link">Read more<span class="more-link-arrow"></span></a></p>
+</div><span class='post-meta-infos'><time class='date-container minor-meta updated' >28th November 2016</time><span class='text-sep text-sep-date'>/</span><span class='comment-container minor-meta'><a href="https://vzaar.com/blog/2016/11/28/case-study-how-san-antonio-independent-school-district-uses-video-to-showcase-its-schools/#respond" class="comments-link" >0 Comments</a></span><span class='text-sep text-sep-comment'>/</span><span class="blog-author minor-meta">by <span class="entry-author-link" ><span class="vcard author"><span class="fn"><a href="https://vzaar.com/blog/author/rhiannon/" title="Posts by Rhiannon" rel="author">Rhiannon</a></span></span></span></span></span><footer class="entry-footer"></footer><div class='post_delimiter'></div></div><div class='post_author_timeline'></div><span class='hidden'>
+			<span class='av-structured-data'  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject"  itemprop='image'>
+					   <span itemprop='url' >https://vzaar.com/wp-content/uploads/2019/03/vzdc-logo-1500x630.png</span>
+					   <span itemprop='height' >0</span>
+					   <span itemprop='width' >0</span>
+				  </span><span class='av-structured-data'  itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="itemscope" >
+				<span itemprop='name'>Rhiannon</span>
+				<span itemprop='logo' itemscope itemtype='https://schema.org/ImageObject'>
+				   <span itemprop='url'>https://vzaar.com/wp-content/uploads/2019/03/vzdc-logo-1500x630.png</span>
+				 </span>
+			  </span><span class='av-structured-data'  itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person" ><span itemprop='name'>Rhiannon</span></span><span class='av-structured-data'  itemprop="datePublished" datetime="2016-11-28T19:05:00+01:00" >2016-11-28 19:05:00</span><span class='av-structured-data'  itemprop="dateModified" itemtype="https://schema.org/dateModified" >2018-09-24 23:22:07</span><span class='av-structured-data'  itemprop="mainEntityOfPage" itemtype="https://schema.org/mainEntityOfPage" ><span itemprop='name'>Case Study: How San Antonio Independent School District Uses Video to Showcase Its Schools</span></span></span></article><div class='single-big'><nav class='pagination'><span class='pagination-meta'>Page 1 of 8</span><span class='current'>1</span><a href='https://vzaar.com/case-studies/page/2/' class='inactive next_page' >2</a><a href='https://vzaar.com/case-studies/page/3/' class='inactive' >3</a><a href='https://vzaar.com/case-studies/page/2/'>&rsaquo;</a><a href='https://vzaar.com/case-studies/page/8/'>&raquo;</a></nav>
+</div>
+				<!--end content-->
+				</main>
+
+				<aside class='sidebar sidebar_right   alpha units'  role="complementary" itemscope="itemscope" itemtype="https://schema.org/WPSideBar" ><div class='inner_sidebar extralight-border'>		<section id="recent-posts-3" class="widget clearfix widget_recent_entries">		<h3 class="widgettitle">Recent Posts</h3>		<ul>
+											<li>
+					<a href="https://vzaar.com/blog/2019/03/13/dacast-acquires-vzaar-to-expand-its-comprehensive-ott-solution/">DaCast acquires vzaar to expand its comprehensive OTT solution</a>
+									</li>
+											<li>
+					<a href="https://vzaar.com/blog/2018/11/12/webinar-highlights-everything-you-need-to-know-about-delivering-video-into-china/">Webinar Highlights: Exploring Video Hosting That Works in China</a>
+									</li>
+											<li>
+					<a href="https://vzaar.com/blog/2018/11/01/how-to-deliver-quality-video-playback-to-students-in-china/">Chinese Video Hosting for Education and eLearning</a>
+									</li>
+											<li>
+					<a href="https://vzaar.com/blog/2018/09/13/how-to-manage-your-videos-as-your-library-grows/">How to Manage Your Videos As Your Library Grows</a>
+									</li>
+					</ul>
+		<span class="seperator extralight-border"></span></section><section id="categories-2" class="widget clearfix widget_categories"><h3 class="widgettitle">Categories</h3>		<ul>
+				<li class="cat-item cat-item-1541"><a href="https://vzaar.com/agency/" >Agency</a>
+</li>
+	<li class="cat-item cat-item-1586"><a href="https://vzaar.com/api/" >API</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://vzaar.com/tech-tips/" >API Tricks &amp; Dev Chat</a>
+</li>
+	<li class="cat-item cat-item-1420 current-cat"><a href="https://vzaar.com/case-studies/" >Case Studies</a>
+</li>
+	<li class="cat-item cat-item-4582"><a href="https://vzaar.com/china-video-hosting/" >China Video Hosting</a>
+</li>
+	<li class="cat-item cat-item-5704"><a href="https://vzaar.com/company-news/" >Company news</a>
+</li>
+	<li class="cat-item cat-item-1837"><a href="https://vzaar.com/ecommerce/" >eCommerce</a>
+</li>
+	<li class="cat-item cat-item-1540"><a href="https://vzaar.com/e-learning/" >eLearning</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="https://vzaar.com/elearning/" >eLearning Video Tips</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://vzaar.com/community/" >Events</a>
+</li>
+	<li class="cat-item cat-item-1386"><a href="https://vzaar.com/playback/" >Playback</a>
+</li>
+	<li class="cat-item cat-item-1384"><a href="https://vzaar.com/player/" >Player</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://vzaar.com/vzaar-updates/" >Product News</a>
+</li>
+	<li class="cat-item cat-item-1714"><a href="https://vzaar.com/publishing/" >Publishing</a>
+</li>
+	<li class="cat-item cat-item-943"><a href="https://vzaar.com/security/" >Security</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://vzaar.com/uncategorised/" >Uncategorised</a>
+</li>
+	<li class="cat-item cat-item-942"><a href="https://vzaar.com/uploading/" >Uploading</a>
+</li>
+	<li class="cat-item cat-item-941"><a href="https://vzaar.com/video-advertising/" >Video Advertising</a>
+</li>
+	<li class="cat-item cat-item-1133"><a href="https://vzaar.com/video-management/" >Video Management</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://vzaar.com/video-marketing/" >Video Marketing</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://vzaar.com/video-advice/" >Video Production</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="https://vzaar.com/faq/" >vzaar FAQ</a>
+</li>
+		</ul>
+			<span class="seperator extralight-border"></span></section></div></aside>
+			</div><!--end container-->
+
+		</div><!-- close default .container_wrap element -->
+
+
+
+
+						<div class='container_wrap footer_color' id='footer'>
+
+					<div class='container'>
+
+						<div class='flex_column av_one_fourth  first el_before_av_one_fourth'><section id="nav_menu-3" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">Product</h3><div class="menu-footer-product-container"><ul id="menu-footer-product" class="menu"><li id="menu-item-12759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12759"><a href="https://vzaar.com/online-video-platform/">Platform</a></li>
+<li id="menu-item-15659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15659"><a href="https://vzaar.com/pricing/">Pricing</a></li>
+<li id="menu-item-12761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12761"><a href="https://vzaar.com/solutions/">Solutions</a></li>
+<li id="menu-item-12762" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12762"><a href="https://vzaar.com/vzaar-updates/">Product News</a></li>
+</ul></div><span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_fourth  el_after_av_one_fourth  el_before_av_one_fourth '><section id="nav_menu-4" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">Company</h3><div class="menu-footer-company-container"><ul id="menu-footer-company" class="menu"><li id="menu-item-12693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12693"><a href="https://vzaar.com/about/">About</a></li>
+<li id="menu-item-14678" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-14678"><a href="https://vzaar.com/blog/">Blog</a></li>
+<li id="menu-item-15427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15427"><a href="https://vzaar.com/blog/category/customer-case-studies/">Case Studies</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55"><a href="https://vzaar.com/jobs">Jobs</a></li>
+<li id="menu-item-15315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15315"><a href="https://vzaar.com/legal/">Legal</a></li>
+</ul></div><span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_fourth  el_after_av_one_fourth  el_before_av_one_fourth '><section id="nav_menu-5" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">Support &#038; Tools</h3><div class="menu-footer-support-tools-container"><ul id="menu-footer-support-tools" class="menu"><li id="menu-item-58" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a href="https://help.vzaar.com">Help &#038; Support</a></li>
+<li id="menu-item-59" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59"><a href="https://developer.vzaar.com/docs">Developers / API</a></li>
+<li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a href="https://help.vzaar.com/article/133-glossary">Glossary</a></li>
+<li id="menu-item-12773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12773"><a href="https://vzaar.com/resources/">Resources</a></li>
+</ul></div><span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_fourth  el_after_av_one_fourth  el_before_av_one_fourth '><section id="nav_menu-6" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">Contact</h3><div class="menu-footer-contact-container"><ul id="menu-footer-contact" class="menu"><li id="menu-item-12897" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12897"><a href="tel:+18445272770">1-844-527-2770</a></li>
+<li id="menu-item-12898" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12898"><a href="tel:+442038580323">+44 20 3858 0323</a></li>
+<li id="menu-item-16047" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16047"><a href="https://vzaar.com/contact/">Send us a message</a></li>
+<li id="menu-item-12896" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12896"><a href="#drift">Start live chat</a></li>
+</ul></div><span class="seperator extralight-border"></span></section></div>
+
+					</div>
+
+
+				<!-- ####### END FOOTER CONTAINER ####### -->
+				</div>
+
+	
+
+
+			
+
+			
+				<footer class='container_wrap socket_color' id='socket'  role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+                    <div class='container'>
+
+                        <span class='copyright'>© 2018 vzaar Limited. Registered in England.<br>Company Number: 0617 6218 VAT: GB 919 256 111<br>黔ICP备15008702号 - <a rel='nofollow' href='https://kriesi.at'>Enfold Theme by Kriesi</a></span>
+
+                        <ul class='noLightbox social_bookmarks icon_count_3'><li class='social_bookmarks_facebook av-social-link-facebook social_icon_1'><a target='_blank' href='https://www.facebook.com/vzaar' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Facebook'><span class='avia_hidden_link_text'>Facebook</span></a></li><li class='social_bookmarks_twitter av-social-link-twitter social_icon_2'><a target='_blank' href='https://twitter.com/vzaar' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Twitter'><span class='avia_hidden_link_text'>Twitter</span></a></li><li class='social_bookmarks_linkedin av-social-link-linkedin social_icon_3'><a target='_blank' href='https://www.linkedin.com/company/vzaar-limited' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Linkedin'><span class='avia_hidden_link_text'>Linkedin</span></a></li></ul>
+                    </div>
+
+	            <!-- ####### END SOCKET CONTAINER ####### -->
+				</footer>
+
+
+					<!-- end main -->
+		</div>
+		
+		<!-- end wrap_all --></div>
+
+<a href='#top' title='Scroll to top' id='scroll-top-link' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Scroll to top</span></a>
+
+<div id="fb-root"></div>
+
+<!-- Hide site attribution -->
+<script>jQuery("[href='https://kriesi.at']").hide();</script>
+
+
+ <script type='text/javascript'>
+ /* <![CDATA[ */  
+var avia_framework_globals = avia_framework_globals || {};
+    avia_framework_globals.frameworkUrl = 'https://vzaar.com/wp-content/themes/enfold/framework/';
+    avia_framework_globals.installedAt = 'https://vzaar.com/wp-content/themes/enfold/';
+    avia_framework_globals.ajaxurl = 'https://vzaar.com/wp-admin/admin-ajax.php';
+/* ]]> */ 
+</script>
+ 
+ <script type='text/javascript' src='https://vzaar.com/wp-content/plugins/responsify-wp/src/picturefill.3.0.1.min.js'></script>
+<script type='text/javascript' src='https://vzaar.com/wp-includes/js/wp-embed.min.js?ver=5.1'></script>
+<script type='text/javascript' src='https://vzaar.com/wp-content/uploads/dynamic_avia/avia-footer-scripts-fbfd3cd92e4936f768e709d3fcdc2b1c.js'></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a0f39d9a6e","applicationID":"185407296","transactionName":"ZVIEYhdSXEVVUEcNClwYJ1URWl1YG1JBBw1bQQM=","queueTime":0,"applicationTime":351,"atts":"SRUHFF9IT0s=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
