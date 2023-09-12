@@ -634,7 +634,7 @@ body > footer .copyrights {
 
 .site-title-block {
   position: relative;
-  float: left;
+  /* float: left; */
   z-index: 1;
   text-align: center;
 }
@@ -842,7 +842,9 @@ body > footer .copyrights {
   background-color: #2eca7f;
   padding: 50px;
   margin-bottom: 25px;
-  background-image: url(../images/sp_main_bg.png);
+  /* background-image: url(../images/sp_main_bg.png); */
+  background-image: url(../images/BG1.JPEG);
+  opacity: 0.7;
   background-size: cover;
   -webkit-background-size: cover;
   background-attachment: scroll;
@@ -882,7 +884,7 @@ body > footer .copyrights {
 
 .start-page-content .page-header .title-block h1 {
   color: #fff;
-  font-size: 54px;
+  /* font-size: 54px; */
   font-weight: 700;
   margin: 30px 0 0;
 }
