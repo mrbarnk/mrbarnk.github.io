@@ -1,0 +1,356 @@
+:root {
+  /* Fonts */
+  --headerFont: "Italiana", sans-serif;
+  --bodyFont: "Poppins", sans-serif;
+  --fontRegular: 400;
+  --fontLight: 300;
+  /* Colors */
+  --primaryDark: #222;
+  --primaryWhite: #f1f1f1;
+  --btDark1: #363636;
+  --btDark2: #1a1a1a;
+}
+body {
+  font-family: var(--bodyFont);
+  background: var(--primaryDark);
+  color: var(--primaryWhite);
+  font-size: 16px;
+  font-weight: var(--fontRegular);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headerFont);
+}
+.bt-h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.bt-h2 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+.bt-h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+.bt-h4 {
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+.bt-h5 {
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+.bt-body {
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+
+.bt-body-small {
+  font-size: 0.8em;
+  line-height: 1.3;
+}
+
+.bt-body-large {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .bt-h1 {
+    font-size: 3em;
+  }
+  .bt-h2 {
+    font-size: 2.5em;
+  }
+  .bt-h3 {
+    font-size: 2em;
+  }
+  .bt-h4 {
+    font-size: 1.8em;
+  }
+  .bt-h5 {
+    font-size: 1.5em;
+  }
+  .bt-body {
+    font-size: 1.1em;
+  }
+  .bt-body-small {
+    font-size: 0.9em;
+  }
+  .bt-body-large {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 992px) {
+  .bt-h1 {
+    font-size: 3.5em;
+  }
+  .bt-h2 {
+    font-size: 3em;
+  }
+  .bt-h3 {
+    font-size: 2.5em;
+  }
+  .bt-h4 {
+    font-size: 2em;
+  }
+  .bt-h5 {
+    font-size: 1.7em;
+  }
+  .bt-body {
+    font-size: 1.2em;
+  }
+  .bt-body-small {
+    font-size: 1em;
+  }
+  .bt-body-large {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bt-h1 {
+    font-size: 4em;
+  }
+  .bt-h2 {
+    font-size: 3.5em;
+  }
+  .bt-h3 {
+    font-size: 3em;
+  }
+  .bt-h4 {
+    font-size: 2.5em;
+  }
+  .bt-h5 {
+    font-size: 2em;
+  }
+  .bt-body {
+    font-size: 1.3em;
+  }
+  .bt-body-small {
+    font-size: 1.1em;
+  }
+  .bt-body-large {
+    font-size: 1.5em;
+  }
+}
+.bt-gradient-text-1 {
+  background: linear-gradient(90deg, #4ca5ff, #93dbff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+/* Header */
+.bt-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 100;
+}
+.bt-header .bt-nav {
+  min-height: 80px;
+  border-radius: 3rem;
+  background: var(--btDark1);
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+.bt-header .bt-nav .bt-nav__brand {
+  display: block;
+  max-width: 100px;
+}
+/* Buttons */
+.bt-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  font-size: 16px;
+  padding: 1rem 2rem;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  min-height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+}
+.bt-link {
+  text-decoration: none;
+  background: linear-gradient(90deg, #4ca5ff, #93dbff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-size: 1rem;
+}
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  opacity: 0.5;
+}
+.bt-button.bt-button--primary {
+  background-image: linear-gradient(
+    to right,
+    #0072ff,
+    #4ea8fd,
+    #53d8fb,
+    #00c6ff
+  );
+  box-shadow: 0 4px 15px 0 rgba(0, 118, 255, 0.75);
+  transition: 0.6s ease-in-out;
+}
+
+.bt-hero {
+  min-height: 60vh;
+  width: 100%;
+  z-index: 1;
+  padding-top: 12rem;
+}
+.bt-section .container,
+.bt-hero .container {
+  position: relative;
+  z-index: 5;
+}
+.bt-section {
+  display: flex;
+  min-height: 40vh;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.bt-cta {
+  min-height: 250px;
+  background: var(--btDark2);
+  border-radius: 25px;
+}
+.bt-section-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50%;
+  width: 100vw;
+  background-image: url("./assets/bg/hero_1.svg"), url("./assets/bg/hero_2.svg"),
+    url("./assets/bg/hero_3.svg");
+  filter: blur(189px);
+  background-repeat: no-repeat;
+  background-position: left 191px, center top, right 205px;
+  z-index: 3;
+}
+@keyframes moveScope1 {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes moveScope2 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes moveScope3 {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+}
+.bt-scope {
+  font-size: 180px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.1;
+  font-weight: 700;
+  color: rgba(0, 198, 255, 0.3);
+  width: 100%;
+}
+.bt-scope.bt-scope--1 {
+  top: 20%;
+  left: 0;
+  animation: moveScope1 48s ease-in-out infinite;
+}
+.bt-scope.bt-scope--2 {
+  top: -5%;
+  right: 0;
+  animation: moveScope2 48s ease-in-out infinite;
+}
+.bt-scope.bt-scope--3 {
+  bottom: -6rem;
+  right: 0;
+  animation: moveScope3 48s ease-in-out infinite;
+}
+
+.bt-section .bt-section__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.bt-sccope-card {
+  padding: 2rem;
+  background: var(--btDark2);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.bt-sccope-card .bt-sccope-card__icon {
+  max-width: 50px;
+  display: block;
+  margin-bottom: 20px;
+}
+.bt-work-card .bt-h5,
+.bt-sccope-card .bt-h5 {
+  font-size: 1.4em;
+}
+.bt-work-card {
+  margin: 1rem auto;
+}
+.bt-work-card .bt-work-card__image {
+  display: block;
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
